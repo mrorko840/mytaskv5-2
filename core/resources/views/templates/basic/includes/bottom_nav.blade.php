@@ -17,7 +17,7 @@
               </a>
           </div> --}}
           <div class="col-auto">
-              <a href="{{ $yourLinks->data_values->telegram }}" class="{{ request()->path() == 'user/analytics' ? 'active jumpBtn' : '' }}">
+              <a href="{{ $links->data_values->telegram }}" class="{{ request()->path() == 'user/analytics' ? 'active jumpBtn' : '' }}">
                   <i class="material-icons">telegram</i>
                   <p>Telegram</p>
               </a>
