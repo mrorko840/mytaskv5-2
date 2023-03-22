@@ -1,3 +1,6 @@
+@php
+$links = getContent('links.content', true);
+@endphp
   <!-- footer-->
   <div class="footer">
       <div class="row no-gutters justify-content-center">
@@ -7,12 +10,19 @@
                   <p>Home</p>
               </a>
           </div>
-          <div class="col-auto">
+          {{-- <div class="col-auto">
               <a href="{{ route('user.analytics') }}" class="{{ request()->path() == 'user/analytics' ? 'active' : '' }}">
                   <i class="material-icons">insert_chart_outline</i>
                   <p>Analytics</p>
               </a>
+          </div> --}}
+          <div class="col-auto">
+            <a href="{{ $yourLinks->data_values->telegram }}" class="{{ request()->path() == 'user/analytics' ? 'active jumpBtn' : '' }}">
+                <i class="material-icons">telegram</i>
+                <p>Telegram</p>
+            </a>
           </div>
+
           <div class="col-auto">
               <a href="{{ route('plans') }}" class="{{ request()->path() == 'plans' ? '' : '' }}">
                 <div style="height: 56px; width: 56px; margin-top: -23px;" class="rounded-circle shadow d-flex align-items-center {{ request()->path() == 'plans' ? 'bg-orange-light text-orange' : 'bg-default-light text-default' }}">
