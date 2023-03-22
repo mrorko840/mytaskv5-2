@@ -303,7 +303,7 @@
                     </div>
 
                     <!-- Swiper Our Reviews-->
-                    <div class="container mb-4">
+                    {{-- <div class="container mb-4">
                         <div class="row mb-3">
                             <div class="col">
                                 <h6 class="subtitle mb-0">Our Reviews</h6>
@@ -349,7 +349,7 @@
 
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
 
 
 

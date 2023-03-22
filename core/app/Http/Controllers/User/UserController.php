@@ -299,7 +299,7 @@ class UserController extends Controller
 
         
 
-        //$user->balance -= $plan->price;
+        $user->balance -= $plan->price;
         //$user->balance -= $plan->price;
         $user->daily_limit = $plan->daily_limit;
         $user->expire_date = now()->addDays($plan->validity);
