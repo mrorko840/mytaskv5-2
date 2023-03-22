@@ -384,6 +384,10 @@
     
 </body>
 
+<script>
+    
+</script>
+
 
 @endsection
 @push('script')
