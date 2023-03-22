@@ -271,7 +271,7 @@
                                             <div class="image-upload">
                                                 <div class="thumb">
                                                     <div class="avatar-preview">
-                                                        <div class="profilePicPreview" style="background-image: url({{ getImage('/',@$section->element->images->$imgKey->size) }})">
+                                                        <div class="profilePicPreview" style="background-image: url({{ asset('/',@$section->element->images->$imgKey->size) }})">
                                                             <button type="button" class="remove-image"><i class="fa fa-times"></i></button>
                                                         </div>
                                                     </div>
